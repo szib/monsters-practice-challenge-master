@@ -1,16 +1,55 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Monstr</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+      integrity="sha256-9mbkOfVho3ZPXfM7W8sV2SndrGDuh7wuyLjtsWeTI1Q="
+      crossorigin="anonymous"
+    />
   </head>
   <body>
-    <h1>Monstr Inc.</h1>
-    <div id='create-monster'></div>
-    <div id='monster-container'></div>
-    <button id="back"><=</button>
-    <button id="forward">=></button>
-    <!-- <script src='index.js'></script> -->
-    <script src='demo.js'></script>
+    <h1 class="ui center aligned header">Monstr Inc.</h1>
+    <div id="create-monster" class="ui text container">
+      <form class="ui form">
+        <input type="text" name="name" id="name" placeholder="Name..." />
+        <input type="text" name="age" id="age" placeholder="Age..." />
+        <input
+          type="text"
+          name="description"
+          id="description"
+          placeholder="Description..."
+        />
+        <button type="submit" class="fluid ui primary button">Create</button>
+      </form>
+    </div>
+    <hr />
+    <div class="ui text container">
+      <div id="navigation" class="ui two buttons">
+        <button id="back" class="ui primary button">
+          Previous page
+        </button>
+        <button id="forward" class="ui primary button">
+          Next page
+        </button>
+      </div>
+      <div id="monster-container" class="ui two cards">
+        <!-- CARDS         -->
+      </div>
+      <hr />
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+      integrity="sha256-t8GepnyPmw9t+foMh3mKNvcorqNHamSKtKRxxpUEgFI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
   </body>
 </html>
